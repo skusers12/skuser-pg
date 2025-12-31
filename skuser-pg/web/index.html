@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Bar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="progress-bar-container" class="progress-container">
+        <div class="progress-box">
+            <div class="progress-header">
+                <div class="progress-icon-wrapper">
+                    <div id="bar-spinner" class="progress-spinner"></div>
+                    <i id="bar-icon" class="progress-icon"></i>
+                </div>
+                <div id="bar-label" class="progress-title">NAPRAWIANIE SILNIKA</div>
+            </div>
+            <div class="progress-track-wrapper">
+                <div class="progress-track">
+                    <div id="progress-bar" class="progress-fill"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="progress-circle-container">
+        <div class="circle-wrapper">
+            <div id="circle-label" class="circle-label"></div>
+            <div class="circle-container">
+                <svg class="circle-svg" viewBox="0 0 100 100">
+                    <circle class="circle-bg" cx="50" cy="50" r="45"></circle>
+                    <circle id="progress-circle" class="circle-progress" cx="50" cy="50" r="45"></circle>
+                </svg>
+                <div id="circle-percent" class="circle-percent">0%</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
