@@ -375,30 +375,3 @@ exports('progressCircle', progressCircle)
 exports('progressActive', progressActive)
 exports('cancelProgress', cancelProgress)
 
-RegisterCommand('testbar', function()
-    local success = progressBar({
-        duration = 10000,
-        label = 'Naprawianie silnika...',
-        icon = 'fas fa-wrench',
-        canCancel = true,
-        useWhileDead = false,
-        allowRagdoll = false,
-        anim = {
-            dict = 'mini@repair',
-            clip = 'fixing_a_player'
-        },
-        disable = {
-            move = true,
-            combat = true
-        }
-    })  
-end)
-
-RegisterCommand('testcircle', function()
-    local success = progressCircle({
-        duration = 3000,
-        label = 'Ładowanie',
-        position = 'bottom',
-        canCancel = true
-    })
-end)
